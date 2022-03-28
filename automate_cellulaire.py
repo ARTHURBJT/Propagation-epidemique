@@ -409,13 +409,6 @@ p8=0.25       #p8=part de la population d'une ville contaminée à partir de laq
 
 noms=["ville "+str(i+1) for i in range(n)]
 
-f = 1000
+f = 1000 #frequence de prise de photo
 
 simulation_maladie_dans_pays(n,p,d,t,p1,p2,p3,p4,p5,p6,p7,p8,noms,f)
-
-
-
-
-
-
-#immunisé pour 6 mois!!
