@@ -496,18 +496,9 @@ p8=0.25    #p8 = taux de contamination du pays à partir duquel :
            #  moins de déplacement dans cette ville, 
            #  moins de propagation pendant 14 jours
 
-noms=["ville "+str(i+1) for i in range(n)]
-f = 100
+noms=["ville "+str(i+1) for i in range(n)] #noms des villes, peut apparaitre sur le nom des images
+
+f = 100    #frequence de prise de photo
 
 simulation_maladie_dans_pays(n,lp,d,t,p1,p2,p3,fct_vax,p5,p6,p7,p8,noms,f)
 
-
-[[0, 11, 6,  14, 11, 5,  6,  8,   6], 
-[11, 0,  13, 33, 26, 12, 14, 20, 15], 
-[6,  13, 0,  17, 13, 6,  7,  10,  8],
-[14, 33, 17, 0,  32, 15, 17, 25, 19], 
-[11, 26, 13, 32, 0,  12, 14, 19, 15], 
-[5,  12, 6,  15, 12, 0,  7,  9,   7], 
-[6,  14, 7,  18, 14, 7,  0,  10,  8], 
-[8,  20, 10, 25, 19, 9,  10, 0,  11], 
-[6,  15, 8,  19, 15, 7,  8,  11, 0]]
